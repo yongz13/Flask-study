@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+    <title>Greet a Friend</title>
+</head>
+<body>
+    <h1>Enter your friend's name:</h1>
+    <form method="POST">
+        <input type="text" name="friendname" placeholder="Your friend's name">
+        <button type="submit">Greet</button>
+    </form>
+
+    {% if name %}
+        <h2>Say hello to {{  name }}!</h2>
+    {% endif %}
+</body>
+</html>
